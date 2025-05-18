@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  overflow-x: hidden;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.rocket-icon {
+  font-size: 50px;
+  color: white;
+  transform: rotate(-120deg);
+  animation: rocket-takeoff 2.5s ease-in-out forwards 2s;
+}
+
+@keyframes rocket-takeoff {
+  0% {
+    transform: translate(0, 0) rotate(-120deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(200px, -800px) rotate(-120deg);
+    opacity: 0;
+  }
+}
+
+.main-content {
+  display: none;
+}
+
+.navbar {
+  background: #111;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #00ffaa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(to right, #101010, #181818);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.container {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #00ffaa;
+  display: inline-block;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.course-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  border: 1px solid #222;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  background: #1a1a1a;
+}
+
+.course-card h3 {
+  color: #00ffaa;
+  margin-bottom: 10px;
+}
+
+.about, .projects, .contact {
+  margin-top: 80px;
+}
+
+.footer {
+  background: #111;
+  text-align: center;
+  padding: 30px;
+  margin-top: 100px;
+}
