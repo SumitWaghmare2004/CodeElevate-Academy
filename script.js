@@ -17,3 +17,34 @@
 
     updateCount();
   });
+
+
+  // Sweet Alert ! Code HERE
+
+
+  document.querySelector('.contact-form-box form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = this.querySelector('input[type="text"]').value.trim();
+  const email = this.querySelector('input[type="email"]').value.trim();
+  const message = this.querySelector('textarea').value.trim();
+
+  if (!name || !email || !message) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Oops...',
+      text: 'Please fill out all the fields before submitting!',
+      confirmButtonColor: '#f5c342'
+    });
+    return;
+  }
+
+  this.reset();
+
+  Swal.fire({
+    icon: 'success',
+    title: 'Thank You for Reaching Out to Us!',
+    text: 'Our Team will contact you soon.',
+    confirmButtonColor: '#f5c342'
+  });
+});
