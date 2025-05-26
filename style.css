@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   cursor: none;
+  position: sticky;
 }
 
 .navbar img {
@@ -42,25 +43,25 @@ body {
 .hero-section-heading {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', ;
   font-size: 50px;
-  margin-top: 80px;
+  margin-top: 130px;
   margin-left: 50px;
 }
 
 .Hero_Cards {
-  margin-left: 850px;
+  margin-left: 950px;
   margin-top: -200px;
   /* margin-bottom: 150px; */
   height: 450px;
-  width: 530px;
+  width: 400px;
 }
 
 .About-us-section {
 
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 .About-us-heading {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  font-family: 'Times New Roman';
   font-size: 50px;
   margin-top: 80px;
   margin-left: 50px;
@@ -68,23 +69,23 @@ body {
 
 .aboutus-img-cont {
   background-color: gray;
-  width: 1300px;
+  width: 1250px;
   height: 450px;
   margin-left: 50px;
   position: relative;
   overflow: visible;
+  border-radius: 20px;
+  margin-top: 150px;
 
 }
 
 .aboutus-img {
-  border: 2px solid hotpink;
-  height: 300px;
-  width: 300px;
+  height: 450px;
+  width: 500px;
   margin-top: 10px;
   position: absolute;
-  background-color: blue;
   top: 700px;
-  left: 150px;
+  left: 130px;
   z-index: 2;
 
 }
@@ -92,13 +93,15 @@ body {
 .aboutus-img img {
   height: 100%;
   width: 100%;
+  margin-top: 130px;
+  border-radius: 20px;
 }
 
 .About-content-paragraph {
-  font-family: 'Times New Roman', Times;
-  font-size: 20px;
+  font-size: 19px;
   justify-content: space-evenly;
   text-justify: distribute;
+
 
 }
 
@@ -110,12 +113,14 @@ body {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-family: 'Times New Roman';
+  font-weight: bold;
 }
 
 .About-content {
   height: 400px;
   width: 500px;
-  border: 2px solid green;
   position: relative;
   top: -430px;
   left: 670px;
@@ -133,7 +138,7 @@ body {
   background-color: #000000;
   flex-wrap: wrap;
   color: white;
-  margin-top: -300px;
+  margin-top: -420px;
 }
 
 .aboutus-left {
@@ -168,62 +173,46 @@ body {
 
 /* Courses Section Starts Here */
 
-.Courses-section {
-  border: 2px solid red;
-  height: 600px;
-  width: 99%;
+.courses-viewport {
+  width: 100%;
+  max-width: 860px; /* ~3 cards * 280px */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.Courses-heading {
-  font-family: 'Times New Roman';
-  font-size: 50px;
-  margin-top: 20px;
-  margin-left: 50px;
-}
-
-.Courses-section span {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-left: 195px;
-}
-
-.cards-list {
-  border: 2px solid white;
-  height: 450px;
-  width: 99%;
+.courses-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  transition: transform 0.5s ease;
+  width: max-content;
 }
 
-.card {
-  /* border: 2px solid hotpink; */
-  border-radius: 10%;
-  height: 450px;
-  width: 350px;
-  /* background-color: linear-gradient(rgb(195, 189, 189) , rgb(221, 151, 151) , 130deg); */
-  background-color: rgb(255, 248, 248);
+.course-card {
+  width: 280px;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
-
-.course-img-cont {
+.course-card img{
   height: 40%;
   width: 100%;
-  /* border: 2px solid greenyellow; */
 }
 
-.course-img-cont img {
-  height: 100%;
-  width: 100%;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
-  object-fit: cover;
-}
+.slider-btn {
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  background: linear-gradient(20deg , hotpink);
+  color: black;
+  margin-left: 500px;
+  position: relative;
+  left: -120px;
+  top: 50px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(130deg ,rgb(73, 175, 247) , rgb(225, 225, 81));
 
-.stars {
-  color: rgb(247, 211, 10);
-  height: 10px;
-  width: 10px;
-  margin-left: 200px;
 }
 
 /* Contact Section */
@@ -244,6 +233,7 @@ body {
 .contact-header h2 {
   font-size: 36px;
   color: #ffffff;
+  font-family: 'Times New Roman';
 }
 
 .contact-header p {
@@ -497,8 +487,9 @@ body {
 .about-heading {
   font-size: 32px;
   font-weight: bold;
-  color: #1a1a1a;
+  color: white;
   margin-bottom: 15px;
+  font-family: 'Times New Roman';
 }
 
 .about-heading span {
@@ -546,4 +537,220 @@ body {
 
 .discover-btn:hover {
   background-color: #019a86;
+}
+
+
+/* Student Review Code */
+.testimonial-marquee-section {
+  padding: 60px 20px;
+  overflow: hidden;
+}
+.testimonial-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+  margin-left: -850px;
+  font-size: 40px;
+}
+
+/* Marquee Container */
+.testimonial-marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Marquee Scrolling Area */
+.testimonial-marquee {
+  display: flex;
+  gap: 40px;
+  animation: scrollMarquee 60s linear infinite;
+  width: max-content;
+}
+
+/* Keyframes for continuous scroll */
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+    background: linear-gradient(150deg , rgb(242, 242, 162) , rgb(174, 229, 233));
+
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  flex: 0 0 300px;
+  min-height: 320px;
+  position: relative;
+}
+.quote-icon {
+  position: absolute;
+  top: -5px;
+  left: 13px;
+  background-color: #fbb03b;
+  color: white;
+  font-size: 24px;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+.stars {
+  font-size: 18px;
+  color: #fbb03b;
+  margin: 10px 0 15px;
+}
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.client-name {
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-marquee {
+    animation-duration: 90s;
+  }
+  .testimonial-card {
+    flex: 0 0 80vw;
+  }
+}
+
+/*  Course Section Code Starts Here */
+
+.course-heading {
+  font-size: 40px;
+  margin-left: 60px;
+}
+
+.course-card-container {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-card {
+  width: 280px;
+  height: 400px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.course-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.course-card-front,
+.course-card-back {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.course-card-front {
+  z-index: 2;
+}
+
+.course-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+  background: linear-gradient(to right, #1a1a1f, #2a2a33);
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.course-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 15px 0;
+  margin-top: -150px;
+}
+
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-more {
+  color: #f5c342;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: -130px;
+}
+
+.join-btn {
+  background-color: #f5c342;
+  border: none;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: -130px;
+}
+
+.back-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.back-content {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.back-content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  line-height: 1.6;
+  margin: 0;
 }
