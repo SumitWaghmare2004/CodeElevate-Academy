@@ -6,8 +6,17 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  scroll-behavior: smooth;
 
 }
+
+
+/* 
+#CD9065
+#E7E7E7
+#EFEFEF
+
+ */
 
 .navbar a {
   color: white;
@@ -109,7 +118,8 @@ body {
 .Get_Started_btn {
   height: 40px;
   width: 130px;
-  background: linear-gradient(120deg, blue, hotpink);
+  /* background: linear-gradient(120deg, blue, hotpink); */
+  background: linear-gradient(120deg, #EFEFEF, #CD9065);
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -230,7 +240,7 @@ body {
 
 
 .contact-section {
-  background-color: #0d0c11;
+  background-color: black;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   padding: 60px 20px;
@@ -744,7 +754,7 @@ body {
 }
 
 .read-more {
-  color: #f5c342;
+  color: #e5d5c9;
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
@@ -752,7 +762,7 @@ body {
 }
 
 .join-btn {
-  background-color: #f5c342;
+  background-color: #E7E7E7;
   border: none;
   color: black;
   padding: 8px 12px;
@@ -957,6 +967,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* width: 1900px; */
   }
 
   .card-image img {
