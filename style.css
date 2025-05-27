@@ -145,6 +145,16 @@ body {
   max-width: 55%;
 }
 
+.aboutus-left h1 {
+  font-size: 35px;
+}
+
+.aboutus-left p {
+  font-size: 18px;
+  font-family: 'Times New Roman';
+  text-align: justify;
+}
+
 .aboutus-stats-container {
   max-width: 40%;
   display: flex;
@@ -175,7 +185,8 @@ body {
 
 .courses-viewport {
   width: 100%;
-  max-width: 860px; /* ~3 cards * 280px */
+  max-width: 860px;
+  /* ~3 cards * 280px */
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -193,7 +204,7 @@ body {
   flex-shrink: 0;
 }
 
-.course-card img{
+.course-card img {
   height: 40%;
   width: 100%;
 }
@@ -202,7 +213,7 @@ body {
   height: 40px;
   width: 90px;
   border-radius: 20px;
-  background: linear-gradient(20deg , hotpink);
+  background: linear-gradient(20deg, hotpink);
   color: black;
   margin-left: 500px;
   position: relative;
@@ -211,7 +222,7 @@ body {
   font-size: 30px;
   border: none;
   cursor: pointer;
-  background: linear-gradient(130deg ,rgb(73, 175, 247) , rgb(225, 225, 81));
+  background: linear-gradient(130deg, rgb(73, 175, 247), rgb(225, 225, 81));
 
 }
 
@@ -257,7 +268,7 @@ body {
   border-radius: 8px;
   width: 280px;
   text-align: left;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .contact-card h4 {
@@ -308,6 +319,12 @@ body {
   background-color: #2a2a33;
   color: #fff;
   border-radius: 4px;
+}
+
+.contact-form-box input:focus,
+.contact-form-box textarea :focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 10px rgba(244, 205, 47, 0.7);
 }
 
 .contact-form-box button {
@@ -455,7 +472,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .img-overlay {
@@ -465,7 +482,7 @@ body {
   width: 180px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .img-overlay img {
@@ -497,7 +514,7 @@ body {
 }
 
 .about-description {
-  color: #555;
+  color: #ffffff;
   font-size: 16px;
   margin-bottom: 25px;
 }
@@ -510,7 +527,7 @@ body {
 }
 
 .feature-item {
-  background: linear-gradient(130deg ,rgb(73, 175, 247) , rgb(225, 225, 81));
+  background: linear-gradient(130deg, rgb(73, 175, 247), rgb(225, 225, 81));
   padding: 15px 20px;
   border-radius: 12px;
   display: flex;
@@ -545,6 +562,7 @@ body {
   padding: 60px 20px;
   overflow: hidden;
 }
+
 .testimonial-heading {
   text-align: center;
   font-size: 2rem;
@@ -574,6 +592,7 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -581,15 +600,16 @@ body {
 
 /* Individual Testimonial Card */
 .testimonial-card {
-    background: linear-gradient(150deg , rgb(242, 242, 162) , rgb(174, 229, 233));
+  background: linear-gradient(150deg, rgb(242, 242, 162), rgb(174, 229, 233));
 
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   flex: 0 0 300px;
   min-height: 320px;
   position: relative;
 }
+
 .quote-icon {
   position: absolute;
   top: -5px;
@@ -600,17 +620,20 @@ body {
   padding: 10px 14px;
   border-radius: 10px;
 }
+
 .stars {
   font-size: 18px;
   color: #fbb03b;
   margin: 10px 0 15px;
 }
+
 .testimonial-card p {
   font-size: 0.95rem;
   color: #333;
   margin-bottom: 15px;
   line-height: 1.6;
 }
+
 .client-name {
   font-weight: bold;
   color: #333;
@@ -622,6 +645,7 @@ body {
   .testimonial-marquee {
     animation-duration: 90s;
   }
+
   .testimonial-card {
     flex: 0 0 80vw;
   }
@@ -648,6 +672,7 @@ body {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   cursor: pointer;
+  justify-content: space-between;
 }
 
 .course-card.flipped {
@@ -746,6 +771,13 @@ body {
 .back-content {
   max-height: 100%;
   overflow-y: auto;
+  margin-left: 10px;
+}
+
+.Final-Result-content {
+  /* margin-left: 37px; */
+  justify-content: center;
+  align-items: center;
 }
 
 .back-content ul {
@@ -753,4 +785,367 @@ body {
   list-style-type: disc;
   line-height: 1.6;
   margin: 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/* Responsive for Mobile and Tablet */
+
+
+/* ===== FINAL RESPONSIVE STYLES FOR MOBILE & TABLET ===== */
+@media screen and (max-width: 1024px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .CodeElevate_Logo {
+    height: 50px;
+    width: auto;
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    display: none;
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+    /* background: #111; */
+    border-top: 1px solid #222;
+  }
+
+  .navbar.active a {
+    display: block;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .hero-section-heading {
+    font-size: 26px;
+    margin: 20px;
+  }
+
+  .Hero_Cards {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .About-us-heading {
+    font-size: 32px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .aboutus-img,
+  .aboutus-img-cont {
+    display: none !important;
+  }
+
+  .About-content {
+    position: static;
+    width: 90%;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+
+  .About-content h2 {
+    font-size: 22px;
+  }
+
+  .About-content-paragraph {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .Get_Started_btn {
+    margin: 20px auto;
+    display: block;
+  }
+
+  .aboutus-section {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .aboutus-left,
+  .aboutus-stats-container {
+    max-width: 100%;
+  }
+
+  .aboutus-left h1 {
+    font-size: 22px;
+  }
+
+  .aboutus-left p {
+    font-size: 14px;
+  }
+
+  .aboutus-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* ===== Course Section Slider ===== */
+  .courses-viewport {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .courses-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease;
+  }
+
+  .course-card-container {
+    width: 100%;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .course-card {
+    width: 90%;
+    max-width: 320px;
+    height: 420px;
+  }
+
+  .slider-btn {
+    display: inline-block;
+    position: relative;
+    margin: 20px 5px 0;
+    left: 0;
+    top: 0;
+    transform: none;
+    font-size: 24px;
+    padding: 10px 20px;
+  }
+
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-image img {
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .img-main {
+    height: 300px;
+    width: 300px;
+  }
+
+  .course-title {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .read-more,
+  .join-btn {
+    margin-top: 10px;
+  }
+
+  .card-content {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  /* Contact, Footer, Testimonials */
+  .contact-form-section,
+  .contact-cards,
+  .contact-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial-heading {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .testimonial-marquee {
+    animation-duration: 100s;
+    flex-wrap: nowrap;
+  }
+
+  .testimonial-card {
+    flex: 0 0 90vw;
+    width: 100px;
+    height: 100px;
+  }
+
+  .repair-about-container {
+    flex-direction: column;
+  }
+
+  .repair-about-content h2 {
+    font-size: 23px;
+  }
+
+  .img-main,
+  .img-overlay {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .img-main img,
+  .img-overlay img {
+    width: 80%;
+  }
+}
+
+/* Animated Hamburger */
+
+/* ================= HAMBURGER MENU STYLES ================== */
+
+/* Base Navigation Style */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav img.CodeElevate_Logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Times New Roman';
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f5c342;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Slide-In Menu */
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    gap: 30px;
+    transition: right 0.4s ease;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li a {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar img.CodeElevate_Logo {
+    height: 50px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1001;
+  }
 }

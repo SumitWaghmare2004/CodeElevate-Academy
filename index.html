@@ -7,7 +7,6 @@
   <title>CodeElevate Academy</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -15,22 +14,40 @@
     <a href="">
       <img src="./Images/CodeElevate_Logo.jpg" alt="CodeElevate_Logo" class="CodeElevate_Logo">
     </a>
-    <a href="">Home</a>
-    <a href="">About Us</a>
-    <a href="">Our Courses</a>
-    <a href="">Student Reviews</a>
-    <a href="">Special Programs</a>
-    <a href="">Contact Us</a>
+    <ul class="nav-links">
+      <li> <a href="#Hero_Section">Home</a>
+      </li>
+      <li> <a href="#About_us_Section">About Us</a>
+      </li>
+      <li> <a href="#course-section">Our Courses</a>
+      </li>
+      <li> <a href="#special-courses">Special Programs</a>
+      </li>
+      <li> <a href="#students-reviews">Student Reviews</a>
+      </li>
+      <li> <a href="#contact-section">Contact Us</a>
+      </li>
+    </ul>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
   </nav>
 
-  <section class="main-content">
+  <!-- Main Hero Section -->
+  <section class="main-content" id="Hero_Section">
     <span>
       <h1 class="hero-section-heading">Learn Smarter. Build Faster.<br>Elevate Your Skills. </h1>
     </span>
     <img src="./Images/Hero_Section_Mockup_Card.png" alt="Hero_Cards" class="Hero_Cards">
   </section>
 
-  <section class="About-us-section">
+  <!-- About Us Section -->
+
+  <section class="About-us-section" id="About_us_Section">
     <h2 class="About-us-heading">About Us</h2>
     <div class="aboutus-img">
       <img src="./Images/About_Us_Card.png" alt="Standing_girl_with_Laptop">
@@ -56,15 +73,20 @@
 
     <div class="aboutus-section">
       <div class="aboutus-left">
-        <h1>Empowering Students for Industry-Ready Success</h1>
+        <h1>Empowering Students for Industry-Ready Success !</h1>
         <p>At CodeElevate Academy, we specialize in delivering both Online and Offline Training Programs designed to
           bridge the gap between academics and industry. Our curriculum includes hands-on job-ready modules, career
           guidance seminars, webinars in top colleges, and collaborations with 10+ academic partners.
 
-          With over 3,000 active students and a 98% success rate, we are committed to equipping future professionals
+          With over 3,000 active students and a 98% success rate , We Provide 70% of hands on Experience to make them
+          confident and ready for any roles.
+          we are committed to equipping future professionals
           with the skills they need to thrive in today’s competitive tech landscape.
 
-          Join us today and take the next big step toward becoming industry-ready!
+
+          <br><br><br><br><br>
+
+          Join us today and take the next big step towards Your Career !
         </p>
       </div>
 
@@ -87,46 +109,11 @@
     </div>
   </section>
 
-  <!-- <section class="Courses-section">
-    <h2 class="Courses-heading">Our Top Courses</h2>
-    <span>Let's learned from top certified mentors !</span>
+  <!-- Courses Section -->
 
-    <div class="cards-list">
-      <div class="card">
-        <div class="course-img-cont">
-          <img src="./Images/course.png">
-
-        </div>
-        <div class="course-content">
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="course-img-cont">
-          <img src="./Images/course2.png">
-
-        </div>
-        <div class="course-content">
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="course-img-cont">
-          <img src="./Images/course3.png">
-        </div>
-        <div class="course-content">
-
-        </div>
-      </div>
-    </div>
-
-  </section> -->
-
-  <section class="course-section">
+  <section class="course-section" id="course-section">
     <div class="section-header">
-      <h2 class="course-heading">Explore Our <span> Courses</span></h2>
+      <h2 class="course-heading">Explore Our <span>Top Courses</span></h2>
       <!-- <a href="#" class="explore-link">Explore Courses →</a> -->
     </div>
 
@@ -141,17 +128,17 @@
               <div class="course-card-front">
                 <div class="card-image">
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjaLOKumYqp6e6qvpk2IJ0xouEmLpe2ZEpg&s"
+                    src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210222183454/How-to-Become-a-Full-Stack-Web-Developer-in-2021.png"
                     alt="Course Image" />
                 </div>
                 <div class="card-content">
                   <div class="card-top">
-                    <span class="lesson-count">25x Lesson</span>
+                    <span class="lesson-count">Duration : 4-5 Months</span>
                     <span class="review-count">
-                      <span class="animated-number" data-target="1500">0</span>Reviews
+                      <span class="animated-number" data-target="1100">0</span> Reviews
                     </span>
                   </div>
-                  <h3 class="course-title">Web Development</h3>
+                  <h3 class="course-title">Full Stack Development</h3>
                   <div class="bottom-info">
                     <a class="read-more">Read More →</a>
                     <button class="join-btn">Join Now</button>
@@ -162,12 +149,20 @@
               <!-- Back Side -->
               <div class="course-card-back">
                 <div class="back-content">
-                  <h4>What You'll Learn</h4>
+                  <h4>What You'll Get</h4>
                   <ul>
-                    <li>Understand supervised learning</li>
-                    <li>Build regression models</li>
-                    <li>Classify real-world data</li>
-                    <li>Evaluate model performance</li>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews</li>
+                    <li>1:1 Live Session</li>
+                    <li>Career Guidance</li>
+                  </ul>
+                </div>
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Become a FullStack Developer</li>
+                    <li>Master frontend & backend technologies</li>
+                    <li>Build complete applications <br>independently</li>
                   </ul>
                 </div>
               </div>
@@ -180,17 +175,17 @@
               <div class="course-card-front">
                 <div class="card-image">
                   <img
-                    src="https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FFeatures_Of_Python_1_f4ccd6d9f7.jpg&w=4500&q=90"
+                    src="https://5.imimg.com/data5/SELLER/Default/2022/8/YK/PA/SR/14110347/careerbuddyonline-industryreadinessprogram-2-jpeg.jpeg"
                     alt="Course Image" />
                 </div>
                 <div class="card-content">
                   <div class="card-top">
-                    <span class="lesson-count">25x Lesson</span>
+                    <span class="lesson-count">Duration : 5-6 Months</span>
                     <span class="review-count">
-                      <span class="animated-number" data-target="1500">0</span> Reviews
+                      <span class="animated-number" data-target="3400">0</span> Reviews
                     </span>
                   </div>
-                  <h3 class="course-title">Python Programming</h3>
+                  <h3 class="course-title">Industry Readiness Program</h3>
                   <div class="bottom-info">
                     <a class="read-more">Read More →</a>
                     <button class="join-btn">Join Now</button>
@@ -201,12 +196,21 @@
               <!-- Back Side -->
               <div class="course-card-back">
                 <div class="back-content">
-                  <h4>What You'll Learn</h4>
+                  <h4>What You'll Get</h4>
                   <ul>
-                    <li>Understand supervised learning</li>
-                    <li>Build regression models</li>
-                    <li>Classify real-world data</li>
-                    <li>Evaluate model performance</li>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews + Career Guidance</li>
+                    <li>1:1 Live Session</li>
+                    <li>Assessment to track Progress</li>
+                    <li>Internship Opportunity</li>
+                  </ul>
+                </div>
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Become a Industry Ready</li>
+                    <li>Confident in Interview & Teamwork</li>
+                    <li>Ready to start your <br>professional journey</li>
                   </ul>
                 </div>
               </div>
@@ -222,7 +226,7 @@
                 </div>
                 <div class="card-content">
                   <div class="card-top">
-                    <span class="lesson-count">25x Lesson</span>
+                    <span class="lesson-count">Duration : 2-3 Months</span>
                     <span class="review-count">
                       <span class="animated-number" data-target="1500">0</span> Reviews
                     </span>
@@ -238,12 +242,116 @@
               <!-- Back Side -->
               <div class="course-card-back">
                 <div class="back-content">
-                  <h4>What You'll Learn</h4>
+                  <h4>What You'll Get</h4>
                   <ul>
-                    <li>Understand supervised learning</li>
-                    <li>Build regression models</li>
-                    <li>Classify real-world data</li>
-                    <li>Evaluate model performance</li>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews</li>
+                    <li>1:1 Live Session</li>
+                    <li>Career Guidance</li>
+                  </ul>
+                </div>
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Ready for Clients facing Role</li>
+                    <li>Confident in Interview & Teamwork</li>
+                    <li>Strong Interpersonal ,<br>Leadership Skills</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card-container">
+            <div class="course-card">
+              <!-- Front Side -->
+              <div class="course-card-front">
+                <div class="card-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjaLOKumYqp6e6qvpk2IJ0xouEmLpe2ZEpg&s"
+                    alt="Course Image" />
+                </div>
+                <div class="card-content">
+                  <div class="card-top">
+                    <span class="lesson-count">Duration :3-4 Months</span>
+                    <span class="review-count">
+                      <span class="animated-number" data-target="1200">0</span>Reviews
+                    </span>
+                  </div>
+                  <h3 class="course-title">Web Development</h3>
+                  <div class="bottom-info">
+                    <a class="read-more">Read More →</a>
+                    <button class="join-btn">Join Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="course-card-back">
+                <div class="back-content">
+                  <h4>What You'll Get</h4>
+                  <ul>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews</li>
+                    <li>1:1 Live Session</li>
+                    <li>Career Guidance</li>
+                  </ul>
+                </div>
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Become a Web Developer</li>
+                    <li>Build and Deploy Your Own Website</li>
+                    <li>Automate Yourself in<br>Daily Tasks</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card-container">
+            <div class="course-card">
+              <!-- Front Side -->
+              <div class="course-card-front">
+                <div class="card-image">
+                  <img
+                    src="https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FFeatures_Of_Python_1_f4ccd6d9f7.jpg&w=4500&q=90"
+                    alt="Course Image" />
+                </div>
+                <div class="card-content">
+                  <div class="card-top">
+                    <span class="lesson-count">Duration :3-4 Months</span>
+                    <span class="review-count">
+                      <span class="animated-number" data-target="2500">0</span> Reviews
+                    </span>
+                  </div>
+                  <h3 class="course-title">Python Programming</h3>
+                  <div class="bottom-info">
+                    <a class="read-more">Read More →</a>
+                    <button class="join-btn">Join Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="course-card-back">
+                <div class="back-content">
+                  <h4>What You'll Get</h4>
+                  <ul>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews</li>
+                    <li>1:1 Live Session</li>
+                    <li>Career Guidance</li>
+                  </ul>
+                </div>
+
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Master Python Programming</li>
+                    <li>Build Automate & Scripts</li>
+                    <li>Be Ready for<br>most challenging roles</li>
                   </ul>
                 </div>
               </div>
@@ -261,9 +369,9 @@
                 </div>
                 <div class="card-content">
                   <div class="card-top">
-                    <span class="lesson-count">25x Lesson</span>
+                    <span class="lesson-count">Duration : 2-3 Months</span>
                     <span class="review-count">
-                      <span class="animated-number" data-target="1500">0</span> Reviews
+                      <span class="animated-number" data-target="900">0</span> Reviews
                     </span>
                   </div>
                   <h3 class="course-title">UI / UX Designing</h3>
@@ -277,18 +385,121 @@
               <!-- Back Side -->
               <div class="course-card-back">
                 <div class="back-content">
-                  <h4>What You'll Learn</h4>
+                  <h4>What You'll Get</h4>
                   <ul>
-                    <li>Understand supervised learning</li>
-                    <li>Build regression models</li>
-                    <li>Classify real-world data</li>
-                    <li>Evaluate model performance</li>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews</li>
+                    <li>1:1 Live Session</li>
+                    <li>Career Guidance</li>
+                  </ul>
+                </div>
+
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Become a UI/UX Designer</li>
+                    <li>Build Apps & Website from Scratch</li>
+                    <li>Create impactful<br>User Experience</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card-container">
+            <div class="course-card">
+              <!-- Front Side -->
+              <div class="course-card-front">
+                <div class="card-image">
+                  <img
+                    src="https://www.ssl2buy.com/wp-content/uploads/2023/08/discover-the-best-al-tools-best-practices-to-use-it-safely.jpg"
+                    alt="Course Image" />
+                </div>
+                <div class="card-content">
+                  <div class="card-top">
+                    <span class="lesson-count">Duration : 2 Months</span>
+                    <span class="review-count">
+                      <span class="animated-number" data-target="1800">0</span> Reviews
+                    </span>
+                  </div>
+                  <h3 class="course-title">Master in AI Tools</h3>
+                  <div class="bottom-info">
+                    <a class="read-more">Read More →</a>
+                    <button class="join-btn">Join Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="course-card-back">
+                <div class="back-content">
+                  <h4>What You'll Get</h4>
+                  <ul>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews</li>
+                    <li>1:1 Live Session</li>
+                    <li>Career Guidance</li>
+                  </ul>
+                </div>
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Master Top AI Platforms</li>
+                    <li>Boost Productivity & Skills</li>
+                    <li>Be AI Ready for<br>Advance Jobs</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="course-card-container">
+            <div class="course-card">
+              <!-- Front Side -->
+              <div class="course-card-front">
+                <div class="card-image">
+                  <img src="https://upthrust.co/wp-content/uploads/2024/09/1695135976530-1024x512.png"
+                    alt="Course Image" />
+                </div>
+                <div class="card-content">
+                  <div class="card-top">
+                    <span class="lesson-count">Duration : 3-4 Months</span>
+                    <span class="review-count">
+                      <span class="animated-number" data-target="1300">0</span> Reviews
+                    </span>
+                  </div>
+                  <h3 class="course-title">Data Analytics</h3>
+                  <div class="bottom-info">
+                    <a class="read-more">Read More →</a>
+                    <button class="join-btn">Join Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="course-card-back">
+                <div class="back-content">
+                  <h4>What You'll Get</h4>
+                  <ul>
+                    <li>Certificate on Completion</li>
+                    <li>Mock Interviews</li>
+                    <li>1:1 Live Session</li>
+                    <li>Career Guidance</li>
+                  </ul>
+                </div>
+                <div class="Final-Result-content">
+                  <h4>Final Result</h4>
+                  <ul>
+                    <li>Become a Data Analyst</li>
+                    <li>Master Visualization</li>
+                    <li>Land Analytics<br>Bussiness Roles</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -301,7 +512,7 @@
 
   <!-- Special Programs Section -->
 
-  <section class="repair-about-section">
+  <section class="repair-about-section" id="special-courses">
     <div class="repair-about-container">
       <div class="repair-about-images">
         <div class="img-main">
@@ -353,7 +564,7 @@
   </section>
 
   <!-- Student Feedback -->
-  <section class="testimonial-marquee-section">
+  <section class="testimonial-marquee-section" id="students-reviews">
     <h2 class="testimonial-heading">Hear from Our Students</h2>
 
     <div class="testimonial-marquee-wrapper">
@@ -362,17 +573,17 @@
         <article class="testimonial-card">
           <div class="quote-icon">“</div>
           <div class="stars">★★★★★</div>
-          <p>Code Elevate made learning to code feel achievable. I started with zero experience and now I’m building my
-            own projects confidently. The lessons are clear, practical, and motivating.</p>
-          <span class="client-name">— Aarav M., Student</span>
+          <p>I’ve tried other platforms, but Code Elevate stands out with its step-by-step structure. The Industry
+            Readiness Program especially helped me feel prepared for real-world challenges.</p>
+          <span class="client-name">— Fatima R. ,Aspiring Developer</span>
         </article>
 
         <article class="testimonial-card">
           <div class="quote-icon">“</div>
           <div class="stars">★★★★★</div>
-          <p>I’ve tried other platforms, but Code Elevate stands out with its step-by-step structure. The Industry
-            Readiness Program especially helped me feel prepared for real-world challenges.</p>
-          <span class="client-name">— Fatima R., Aspiring Developer</span>
+          <p>Code Elevate made learning to code feel achievable. I started with zero experience and now I’m building my
+            own projects confidently. The lessons are clear, practical, and motivating.</p>
+          <span class="client-name"> — Manasvi .U , Beginner Student</span>
         </article>
 
         <article class="testimonial-card">
@@ -404,14 +615,14 @@
           <div class="stars">★★★★★</div>
           <p>Code Elevate gave me the confidence to apply for internships. The real-world projects and guidance made all
             the difference—I finally feel like a developer, not just a learner.</p>
-          <span class="client-name">— Sneha D., Computer Science Student</span>
+          <span class="client-name">— Sneha D., Mechanical Student</span>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Contact Section Starts Here -->
-  <section class="contact-section">
+  <section class="contact-section" id="contact-section">
     <div class="contact-header">
       <h2>CONTACT US</h2>
       <p>
