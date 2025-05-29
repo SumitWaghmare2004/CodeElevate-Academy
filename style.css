@@ -63,12 +63,6 @@ body {
   height: 450px;
   width: 400px;
 }
-
-.About-us-section {
-
-  /* border: 2px solid yellow; */
-}
-
 .About-us-heading {
   font-family: 'Times New Roman';
   font-size: 50px;
@@ -77,7 +71,7 @@ body {
 }
 
 .aboutus-img-cont {
-  background-color: gray;
+  background-color: #d29062;
   width: 1250px;
   height: 450px;
   margin-left: 50px;
@@ -118,8 +112,8 @@ body {
 .Get_Started_btn {
   height: 40px;
   width: 130px;
-  /* background: linear-gradient(120deg, blue, hotpink); */
-  background: linear-gradient(120deg, #EFEFEF, #CD9065);
+  background: linear-gradient(120deg, #000000);
+  color: white;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -232,7 +226,8 @@ body {
   font-size: 30px;
   border: none;
   cursor: pointer;
-  background: linear-gradient(130deg, rgb(73, 175, 247), rgb(225, 225, 81));
+  /* background: linear-gradient(130deg, rgb(73, 175, 247), rgb(225, 225, 81)); */
+  background: linear-gradient(130deg , #d29062);
 
 }
 
@@ -294,7 +289,7 @@ body {
 }
 
 .contact-card a {
-  color: #f5c342;
+  color: #d29062;
   text-decoration: none;
   font-size: 14px;
 }
@@ -339,7 +334,7 @@ body {
 
 .contact-form-box button {
   padding: 12px;
-  background-color: #f5c342;
+  background-color: #d29062;
   border: none;
   color: #000;
   font-weight: bold;
@@ -357,7 +352,7 @@ body {
 }
 
 .contact-info-text h4 {
-  color: #f5c342;
+  color: #d29062;
   font-size: 16px;
   margin-bottom: 5px;
 }
@@ -382,7 +377,7 @@ body {
 }
 
 .left-footer h2 {
-  color: #f5c342;
+  color: #d29062;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -475,8 +470,8 @@ body {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: #00bfa6;
-  color: #fff;
+  background-color: #d3a98c;
+  color: black;
   padding: 10px 20px;
   border-radius: 30px;
   font-weight: bold;
@@ -536,13 +531,27 @@ body {
   margin-bottom: 30px;
 }
 
-.feature-item {
-  background: linear-gradient(130deg, rgb(73, 175, 247), rgb(225, 225, 81));
+.feature-item-1 {
+  background: linear-gradient(130deg, #d29062, white);
   padding: 15px 20px;
-  border-radius: 12px;
+  border-radius: 15px;
   display: flex;
   align-items: flex-start;
   gap: 15px;
+  color: black;
+}
+
+
+.feature-item-2 {
+  background: linear-gradient(130deg, white, #d29062);
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: black;
+  position: relative;
+  top: 10px;
 }
 
 .feature-icon {
@@ -552,8 +561,8 @@ body {
 }
 
 .discover-btn {
-  background-color: #00bfa6;
-  color: white;
+  background-color: #e4a77b;
+  color: black;
   padding: 12px 24px;
   border: none;
   border-radius: 25px;
@@ -610,8 +619,8 @@ body {
 
 /* Individual Testimonial Card */
 .testimonial-card {
-  background: linear-gradient(150deg, rgb(242, 242, 162), rgb(174, 229, 233));
-
+  /* background: linear-gradient(150deg, rgb(242, 242, 162), rgb(174, 229, 233)); */
+  background: linear-gradient(150deg ,#d29062);
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -624,16 +633,16 @@ body {
   position: absolute;
   top: -5px;
   left: 13px;
-  background-color: #fbb03b;
+  /* background-color: white; */
   color: white;
-  font-size: 24px;
-  padding: 10px 14px;
+  font-size: 70px;
+  padding: 0px 14px;
   border-radius: 10px;
 }
 
 .stars {
   font-size: 18px;
-  color: #fbb03b;
+  color: black;
   margin: 10px 0 15px;
 }
 
@@ -646,7 +655,7 @@ body {
 
 .client-name {
   font-weight: bold;
-  color: #333;
+  color: black;
   display: block;
 }
 
@@ -754,7 +763,7 @@ body {
 }
 
 .read-more {
-  color: #e5d5c9;
+  color: white;
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
