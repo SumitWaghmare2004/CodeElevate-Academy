@@ -36,8 +36,8 @@ body {
 }
 
 .navbar img {
-  height: 150px;
-  width: 190px;
+  height: 130px;
+  width: 170px;
   position: absolute;
   left: 10px;
 }
@@ -54,6 +54,14 @@ body {
   font-size: 50px;
   margin-top: 130px;
   margin-left: 50px;
+}
+
+.hero-section-para {
+  margin-left: 50px;
+  text-align: justify;
+  text-decoration: none;
+  font-family: times ;
+  color: #b5b2b2;
 }
 
 .Hero_Cards {
@@ -108,7 +116,6 @@ body {
 
 }
 
-
 .Get_Started_btn {
   height: 40px;
   width: 130px;
@@ -131,7 +138,6 @@ body {
   padding: 15px;
 
 }
-
 
 /* Animated Number Count Code : */
 .aboutus-section {
@@ -232,7 +238,6 @@ body {
 }
 
 /* Contact Section */
-
 
 .contact-section {
   background-color: black;
@@ -1088,7 +1093,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #f5c342;
+  color: #d29062;
 }
 
 /* Hamburger Button */
