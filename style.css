@@ -31,9 +31,18 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
-  cursor: none;
-  position: sticky;
+  position: fixed;
+  /* make it always fixed */
+  top: 0;
+  /* stick to the top */
+  left: 0;
+  width: 100%;
+  /* full width */
+  z-index: 999;
+  background-color: black;
+  /* avoid transparent overlap */
 }
+
 
 .navbar img {
   height: 130px;
@@ -60,7 +69,7 @@ body {
   margin-left: 50px;
   text-align: justify;
   text-decoration: none;
-  font-family: times ;
+  font-family: times;
   color: #b5b2b2;
 }
 
@@ -71,6 +80,7 @@ body {
   height: 450px;
   width: 400px;
 }
+
 .About-us-heading {
   font-family: 'Times New Roman';
   font-size: 50px;
@@ -112,7 +122,6 @@ body {
   font-size: 19px;
   justify-content: space-evenly;
   text-justify: distribute;
-
 
 }
 
@@ -180,6 +189,7 @@ body {
 
 .stat {
   text-align: center;
+  margin-left: 25px;
 }
 
 .stat .count {
@@ -188,8 +198,6 @@ body {
   font-weight: bold;
   display: block;
 }
-
-
 
 /* Courses Section Starts Here */
 
@@ -233,7 +241,7 @@ body {
   border: none;
   cursor: pointer;
   /* background: linear-gradient(130deg, rgb(73, 175, 247), rgb(225, 225, 81)); */
-  background: linear-gradient(130deg , #d29062);
+  background: linear-gradient(130deg, #d29062);
 
 }
 
@@ -433,8 +441,6 @@ body {
   color: #000;
 }
 
-
-
 /* Special Program */
 
 .repair-about-section {
@@ -527,6 +533,7 @@ body {
   color: #ffffff;
   font-size: 16px;
   margin-bottom: 25px;
+  padding: 15px;
 }
 
 .about-feature-box {
@@ -625,7 +632,7 @@ body {
 /* Individual Testimonial Card */
 .testimonial-card {
   /* background: linear-gradient(150deg, rgb(242, 242, 162), rgb(174, 229, 233)); */
-  background: linear-gradient(150deg ,#d29062);
+  background: linear-gradient(150deg, #d29062);
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -672,6 +679,14 @@ body {
 
   .testimonial-card {
     flex: 0 0 80vw;
+  }
+
+
+  .hero-section-para {
+    font-size: 15px;
+    padding: 0 15px;
+    margin: 10px auto;
+    text-align: justify;
   }
 }
 
@@ -813,8 +828,16 @@ body {
 
 .hamburger {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
 }
-
 
 /* Responsive for Mobile and Tablet */
 
@@ -841,28 +864,20 @@ body {
     margin-bottom: 10px;
   }
 
-  .hamburger {
-    display: block;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    z-index: 1000;
+  .nav-links.open li a {
+    display: block !important;
   }
 
-  .navbar a {
-    display: none;
-    width: 100%;
-    text-align: left;
-    padding: 12px 20px;
-    /* background: #111; */
-    border-top: 1px solid #222;
+  .feature-item-1 {
+    margin: 10px;
   }
 
-  .navbar.active a {
-    display: block;
+  .feature-item-2 {
+    margin: 10px;
+  }
+
+  .discover-btn {
+    margin-left: 10px;
   }
 
   .main-content {
@@ -880,7 +895,7 @@ body {
 
   .Hero_Cards {
     width: 90%;
-    max-width: 300px;
+    max-width: 320px;
     height: auto;
     margin: 20px auto;
   }
@@ -910,11 +925,14 @@ body {
   .About-content-paragraph {
     font-size: 15px;
     text-align: justify;
+    padding: 5px;
   }
 
   .Get_Started_btn {
     margin: 20px auto;
     display: block;
+    background: #cd9262;
+    color: black;
   }
 
   .aboutus-section {
@@ -930,6 +948,7 @@ body {
 
   .aboutus-left h1 {
     font-size: 22px;
+    padding: 5px;
   }
 
   .aboutus-left p {
@@ -963,18 +982,20 @@ body {
   .course-card {
     width: 90%;
     max-width: 320px;
-    height: 420px;
+    height: auto;
+    padding-bottom: 20px;
   }
 
   .slider-btn {
     display: inline-block;
     position: relative;
-    margin: 20px 5px 0;
+    margin: 10px;
     left: 0;
     top: 0;
     transform: none;
-    font-size: 24px;
-    padding: 10px 20px;
+    font-size: 20px;
+    padding: 8px 16px;
+    width: auto;
   }
 
   .slider-container {
@@ -996,17 +1017,17 @@ body {
 
   .course-title {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 10px 0;
   }
 
   .read-more,
   .join-btn {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .card-content {
     height: auto;
-    padding-bottom: 20px;
+    padding: 10px;
   }
 
   /* Contact, Footer, Testimonials */
@@ -1040,6 +1061,7 @@ body {
 
   .repair-about-content h2 {
     font-size: 23px;
+    padding: 15px;
   }
 
   .img-main,
@@ -1094,17 +1116,8 @@ body {
 
 .nav-links li a:hover {
   color: #d29062;
-}
-
-/* Hamburger Button */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 28px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 1001;
+  text-shadow: 0 0 10px #d5a480, 0 0 20px #ef9352, 0 0 25px #fcbc8f;
+  text-decoration: line-through;
 }
 
 .hamburger span {
@@ -1132,10 +1145,6 @@ body {
 @media screen and (max-width: 1024px) {
   .hamburger {
     display: flex;
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    z-index: 1001;
   }
 
   .nav-links {
@@ -1165,10 +1174,11 @@ body {
     font-weight: bold;
     color: white;
     text-decoration: none;
+    padding: 8px;
   }
 
   .navbar img.CodeElevate_Logo {
-    height: 50px;
+    height: auto;
     margin-left: 10px;
     position: relative;
     z-index: 1001;

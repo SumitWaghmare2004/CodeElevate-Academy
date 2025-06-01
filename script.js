@@ -144,11 +144,23 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
+  const navItems = document.querySelectorAll('.nav-links li a');
 
   if (hamburger && navLinks) {
+    // Toggle hamburger menu
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       navLinks.classList.toggle('open');
+    });
+
+    // ✅ Close menu when any nav item is clicked
+    navItems.forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('open')) {
+          navLinks.classList.remove('open');
+          hamburger.classList.remove('active');
+        }
+      });
     });
   }
 });
