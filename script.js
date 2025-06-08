@@ -1,27 +1,26 @@
-  const counters = document.querySelectorAll('.count');
-  const speed = 100; // lower is faster
+const counters = document.querySelectorAll('.count');
+const speed = 100; // lower is faster
 
-  counters.forEach(counter => {
-    const updateCount = () => {
-      const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText;
-      const inc = Math.ceil(target / speed);
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+    const inc = Math.ceil(target / speed);
 
-      if (count < target) {
-        counter.innerText = count + inc;
-        setTimeout(updateCount, 20);
-      } else {
-        counter.innerText = target.toLocaleString(); // format number with commas
-      }
-    };
+    if (count < target) {
+      counter.innerText = count + inc;
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target.toLocaleString(); // format number with commas
+    }
+  };
 
-    updateCount();
-  });
+  updateCount();
+});
 
+// Form Data Submission Code 
 
-  // Sweet Alert ! Code HERE
-
-  document.querySelector('.contact-form-box form').addEventListener('submit', function(e) {
+document.querySelector('.contact-form-box form').addEventListener('submit', function (e) {
   e.preventDefault();
 
   const name = this.querySelector('input[type="text"]').value.trim();
@@ -40,54 +39,69 @@
 
   this.reset();
 
+  // ✅ Show SweetAlert, then redirect to WhatsApp
   Swal.fire({
     icon: 'success',
     title: 'Thank You for Reaching Out to Us!',
     text: 'Our Team will contact you soon.',
     confirmButtonColor: '#f5c342'
+  }).then(() => {
+    // ✅ Replace the number below with your WhatsApp number (with country code)
+    const whatsappNumber = '919665658240'; // ← your number without +
+    const encodedMsg = encodeURIComponent(`New Inquiry 👋\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMsg}`;
+
+    // Redirect after alert
+    window.location.href = whatsappURL;
   });
 });
 
 
+// course Section Slider Code
 
-// course Section 
-  let currentIndex = 0;
+let currentIndex = 0;
 
-  function scrollCourses(direction) {
-    const cardWidth = 300; // 280px width + 20px margin
-    const slider = document.getElementById("courseSlider");
-    const totalCards = slider.children.length;
-    const visibleCards = 3;
+function scrollCourses(direction) {
+  const slider = document.getElementById("courseSlider");
+  const cards = slider.querySelectorAll(".course-card-container");
 
-    currentIndex += direction;
+  if (cards.length === 0) return;
 
-    if (currentIndex < 0) currentIndex = 0;
-    if (currentIndex > totalCards - visibleCards) currentIndex = totalCards - visibleCards;
+  const cardStyle = window.getComputedStyle(cards[0]);
+  const cardWidth = cards[0].offsetWidth + parseInt(cardStyle.marginRight) + parseInt(cardStyle.marginLeft);
 
-    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-  }
+  const maxIndex = cards.length - 1;
+
+  currentIndex += direction;
+
+  if (currentIndex < 0) currentIndex = 0;
+  if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+  slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
 
 
-  // Animated Cards Section --- Count down of Reviews number
 
-    document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".animated-number");
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute("data-target");
-        const count = +counter.innerText;
-        const increment = target / 50;
+// Animated Cards Section --- Count down of Reviews number
 
-        if (count < target) {
-          counter.innerText = Math.ceil(count + increment);
-          setTimeout(updateCount, 30);
-        } else {
-          counter.innerText = (target >= 1000) ? (target / 1000).toFixed(1) + "k" : target;
-        }
-      };
-      updateCount();
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".animated-number");
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText;
+      const increment = target / 50;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = (target >= 1000) ? (target / 1000).toFixed(1) + "k" : target;
+      }
+    };
+    updateCount();
   });
+});
 
 
 // Read More Card Will Flip
